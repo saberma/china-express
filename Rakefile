@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "china-express"
   gem.homepage = "http://github.com/saberma/china-express"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{中国快递查询}
+  gem.description = gem.summary
   gem.email = "mahb45@gmail.com"
   gem.authors = ["saberma"]
   # dependencies defined in Gemfile
