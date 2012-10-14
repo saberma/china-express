@@ -11,4 +11,5 @@ group :development do
   gem "yard", "~> 0.7"
   gem "bundler", "~> 1.1.5"
   gem "jeweler", "~> 1.8.4"
+  gem "webmock", "~> 1.8.7"
 end
