@@ -1,4 +1,4 @@
-## 中国快递查询
+## 中国快递查询 [![Build Status](https://secure.travis-ci.org/saberma/china-express.png)](http://travis-ci.org/saberma/china-express)
 
 支持顺丰、EMS、申通、圆通、中通、宅急送、韵达、天天快递、联邦快递、汇通等，无须验证码
 
