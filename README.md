@@ -3,4 +3,4 @@
 
 ### 使用
 
-    Express.with '单号', '快递公司'
+    Express.search '单号', '快递公司拼音'
