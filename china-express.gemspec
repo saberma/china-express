@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "china-express.gemspec",
     "lib/china-express.rb",
     "lib/express/company.rb",
     "lib/express/result.rb",
