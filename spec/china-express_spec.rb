@@ -7,7 +7,9 @@ describe "ChinaExpress" do
 
   let(:number) { '109999669998' }
 
-  let(:company) { 'shunfeng' } # 顺丰
+  let(:company) { '顺丰快递' } # 顺丰
+
+  let(:company_code) { 'shunfeng' }
 
   let(:body) do
     {
@@ -28,7 +30,7 @@ describe "ChinaExpress" do
   end
 
   before do
-    stub_request(:get, "http://api.ickd.cn/?com=#{company}&encode=utf8&id=#{key}&nu=#{number}&ord=asc&type=json").to_return(body: body)
+    stub_request(:get, "http://api.ickd.cn/?com=#{company_code}&encode=utf8&id=#{key}&nu=#{number}&ord=asc&type=json").to_return(body: body)
     #WebMock.allow_net_connect!
   end
 
