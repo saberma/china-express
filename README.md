@@ -10,6 +10,7 @@
 
 请前往 [爱查快递API申请](http://www.ickd.cn/api/reg.html)，申请成功，爱查会给你发 `key` 到你的邮箱
 
+    require 'china-express'
     Express.key = 'your_key_here'
     Express.search (单号', '快递公司')
 
@@ -17,4 +18,7 @@
 
     result = Express.search('123456', '顺丰')
     result.success? # true
-    result.data # [{'time' => "2012-10-08 09:20", 'content' => "签收人是:马"}]
+    result.data # [{'time' => "2012-10-08 09:20", 'context' => "签收人是:马"}]
+    result.data.each do |item|
+      puts "#{item['time']} #{item['context']}"
+    end
