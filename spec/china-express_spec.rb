@@ -35,7 +35,7 @@ describe "ChinaExpress" do
   end
 
   it "should be search" do
-    Express.ickd_key = key
+    Express.key = key
     result = Express.search(number, company)
     result.success?.should be_true
     result.data.should_not be_empty

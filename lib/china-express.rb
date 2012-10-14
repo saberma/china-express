@@ -12,13 +12,13 @@ module Express # 快递查询
   default_params type: :json, encode: :utf8, ord: :asc
   #debug_output
   class << self
-    attr_accessor :ickd_key
+    attr_accessor :key
   end
 
   # @number 运单号
   # @company 快递公司拼音
   def self.search(number, company, key = nil)
-    options= { com: company_code(company), nu: number, id: (key || self.ickd_key )}
+    options= { com: company_code(company), nu: number, id: (key || self.key )}
     body = get("/", query: options).body
     Result.new JSON(body)
   end
